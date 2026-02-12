@@ -1,0 +1,188 @@
+/* exemplo colorir por elemento
+h1{
+    color: rgb(15, 27, 83);
+    font-size: 32 px;
+}
+
+body{
+    background-color: rgb(250, 225, 186);
+
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(32, 62, 3);
+    font-style: italic;
+    margin-right: 35px;
+}
+
+input{
+    line-height: normal;
+    color: #666;
+    border-radius: 5px;
+    border-width: 3px;
+    margin-right: 40px;
+
+}
+exemplo colorir por classe
+.caixa{
+    color: #654650;
+}
+exemplo colorir por Id
+#contato{
+    color: bisque;
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Geneva', sans-serif;
+    background: linear-gradient(135deg, #c72bb7, #923f92, #35080f);
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+
+}
+header {
+      /* rgba = RED, GREEN, BLUE, TRANSPARENCIA */
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      /* borda arredondada */
+      border-radius: 12px;
+      /* comentário */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #3db7cc;
+      text-shadow: 0 0 5px #5bbadc, 0 0 10px #1c5fbc;
+      /* ponteiro do mouse muda */
+       cursor: pointer;
+    }
+
+
+     nav ol {
+      /* ativa flexbox */
+      display: flex;
+      /* negrito */
+      font-weight: bold;
+      /* espaço entre elementos */
+       gap: 40px;
+      margin-top: 10px;
+    }
+
+
+
+ul {
+      /* deixa os itens da lista lado-a-lado ao invés de um em cima do outro */
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+
+
+nav a {
+      /* retira os sublinhados e outras decorações que são inerentes do link (a)  */
+      text-decoration: none;
+      color: #ffffff;
+      padding: 8px 14px;
+      background-color: #bc39c5;
+      border-radius: 6px;
+      /* quando houver mudança, muda a background-color numa transição suave */
+       transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+       /* ao passar o mouse por cima, coloca a background-color da cor escolhida*/
+      background-color: #008c9e;
+    }
+
+main section {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+ }
+
+ h2 {
+      color: #00b3ff;
+      margin-bottom: 10px;
+      border-left: 4px solid #008cff;
+      padding-left: 10px;
+    }
+
+    p, li, label {
+      font-size: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 50%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    form {
+      display: flex;
+      /* flexbox fica espalhado lado-a-lado em ‘colunas’ ao invés de um em cima do outro */
+      flex-direction: column;
+      gap: 15px;
+    }
+
+      input, textarea, select {
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: #924f92;
+      color: #000000;
+    }
+
+    /* Focus é quando estiver selecionado */
+    input:focus, textarea:focus, select:focus {
+        outline: 2px solid #00bcd4;
+    }
+
+ label.checkbox-label {
+      display: flex;
+      /* centraliza de forma vertical */
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+       /* usuário não pode copiar o texto do elemento */
+      user-select: none;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #a03385;
+      color: #000;
+      border: none;
+      border-radius: 60px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+
+
+    button:hover {
+      background-color: #f854e2;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #6b626e;
+      font-size: 0.9em;
+    }
+
+    
